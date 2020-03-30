@@ -2,7 +2,7 @@
 
 Nightingale的理念，是将告警事件扔到redis里就不管了，接下来由各种sender来读取redis里的事件并发送，毕竟发送报警的方式太多了，适配起来比较费劲，希望社区同仁能够共建。
 
-这里提供一个微信机器人的sender，参考了[https://github.com/n9e/wechatrobot-sender](https://github.com/wechatrobot-sender)。
+这里提供一个微信机器人的sender，参考了[https://github.com/n9e/wechat-sender](https://github.com/wechat-sender)。
 
 夜莺后台创建虚拟user，企业微信机器人webhook的key值作为虚拟user的im，需要在夜莺项目monapi.yaml设置里的notify添加im告警，如下：
 ```
